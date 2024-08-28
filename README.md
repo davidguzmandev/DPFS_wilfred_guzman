@@ -1,12 +1,13 @@
 Follow to English
 
-# EcoShop - Tu tienda de productos ecológicos
+# EcoThreads - Tu tienda de productos ecológicos
 
 ## Descripción del Proyecto
-EcoShop es una tienda en línea dedicada a ofrecer productos eco-amigables y sostenibles para todos los aspectos de la vida diaria. Desde artículos para el hogar hasta alimentos orgánicos, todos nuestros productos son seleccionados cuidadosamente para asegurar que cumplen con los más altos estándares de sostenibilidad.
+Bienvenidos a EcoThreads, la boutique en línea para la moda consciente. Aquí encontrarás ropa y accesorios hechos exclusivamente con materiales ecológicos y procesos que respetan el planeta. Nuestra misión es ofrecer estilo sin comprometer nuestra tierra.
 
 ## Audiencia Objetivo
-Nuestro sitio está diseñado para consumidores conscientes del medio ambiente, que desean hacer una diferencia positiva en el mundo con cada compra. Apuntamos a jóvenes adultos y familias que valoran la calidad y la ética detrás de los productos que utilizan a diario.
+EcoThreads está diseñado para jóvenes adultos que valoran tanto el estilo como la sostenibilidad. Nuestros clientes saben que cada compra puede contribuir a un cambio positivo y eligen hacer la diferencia con su estilo.
+
 
 ## Sobre el Desarrollo
 Este proyecto está siendo desarrollado utilizando Node.js y React, mostrando la versatilidad y potencial de estas tecnologías en la creación de aplicaciones web modernas y eficientes.
@@ -22,13 +23,13 @@ Para más información, puedes contactarnos a través de nuestro sitio web.
 ------------------------------------------------------------------------------------------------
 English Version
 
-# EcoShop - Your Eco-Friendly Products Store
+# EcoThreads - Your Eco-Friendly Shop
 
 ## Project Description
-EcoShop is an online store dedicated to offering eco-friendly and sustainable products for all aspects of daily life. From household items to organic food, all of our products are carefully selected to ensure they meet the highest sustainability standards.
+Welcome to EcoThreads, the online boutique for conscious fashion. Here you will find clothing and accessories made exclusively from eco-friendly materials and processes that respect the planet. Our mission is to offer style without compromising our earth.
 
 ## Target Audience
-Our site is designed for environmentally conscious consumers, who want to make a positive difference in the world with every purchase. We target young adults and families who value the quality and ethics behind the products they use on a daily basis.
+EcoThreads is designed for young adults who value both style and sustainability. Our customers know that every purchase can contribute to positive change and choose to make a difference with their style.
 
 ## About Development
 This project is being developed using Node.js and React, showcasing the versatility and potential of these technologies in creating modern and efficient web applications.
