@@ -1,7 +1,6 @@
 # David - Tienda virtual
 
-
-## Tabla de Contenidos
+## Tabla de Contenido
 - [Descripción del Proyecto](#descripción-del-proyecto)
 - [Audiencia Objetivo](#audiencia-objetivo)
 - [Sobre el Desarrollo](#sobre-el-desarrollo)

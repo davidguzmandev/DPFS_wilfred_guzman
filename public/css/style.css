@@ -1,0 +1,125 @@
+body{
+    font-family:"Montserrat", sans-serif;
+    background-color: white
+}
+
+.logo img{
+    height: 80px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width:
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 8px 10px 8px 40px;
+    border: 0px;
+    background-color: #d8d8d8;
+    border-radius: 30px;
+    margin: 0 10px 0 25px;
+    align-items: center;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+}
+
+.buscar{
+    
+    border-radius: 30px;
+    border: 0px;
+    background-color: white;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    color: rgb(186, 186, 186);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.buscar input {
+    background: url(../../src/icons/search.svg) no-repeat scroll 7px 7px;
+    background-size: 20px;
+    padding: 8px 12px 8px 12px;
+    border: 0;
+    text-align: center;
+    border-radius: 30px;
+    font-family:"Montserrat", sans-serif;
+}
+
+.user {
+    border-radius: 30px;
+    border: 0px;
+    background-color: #d8d8d8;
+    padding: 10px 12px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerSquare {
+    background-color: #ffd100;
+    border-radius: 30px;
+    width: 800px;
+    height: 300px;
+    position: relative;
+    margin: 130px 0 0 0;
+}
+
+.textBanner{
+    align-items: center;
+    padding: 100px 0 0 40px;
+}
+
+.bannerSquare img {
+    position: absolute;
+    height: 400px;
+    top: -100px;
+    left: 50%;
+}
+
+.bannerSquare h1{
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+.bannerSquare h5{
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.bannerSquare p{
+    font-size: 14px;
+    padding: 0;
+    margin: 6px 0;
+}
+
+.comprar {
+    border-radius: 30px;
+    border: 0;
+    padding: 8px 12px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 800;
+    margin-left: 280px;
+    cursor: pointer;
+}
+
