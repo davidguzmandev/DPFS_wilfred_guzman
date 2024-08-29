@@ -6,7 +6,7 @@
 - [Audiencia Objetivo](#audiencia-objetivo)
 - [Sobre el Desarrollo](#sobre-el-desarrollo)
 - [Diseño](#sobre-el-desarrollo)
--- [Wireframes](#sobre-el-desarrollo)
+    - [Wireframes](#sobre-el-desarrollo)
 - [Desarrolladores](#desarrolladores)
 
 
