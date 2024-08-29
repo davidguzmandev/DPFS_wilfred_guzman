@@ -15,6 +15,13 @@ Este proyecto está siendo desarrollado utilizando Node.js y React, mostrando la
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
 
+### Referencias:
+- [Calvin Klein](https://www.calvinklein.ca/en)
+- [Foot Locker](https://www.footlocker.com/)
+- [Urban Outfitters](https://www.urbanoutfitters.com/en-ca)
+- [Lululemon](https://shop.lululemon.com/)
+- [Nike](https://www.nike.com/ca/)
+
 ## Contáctanos
 Para más información, puedes contactarnos a través de nuestro sitio web.
 
