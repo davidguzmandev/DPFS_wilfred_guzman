@@ -1,8 +1,9 @@
 # David - Tienda virtual
+<!-- TOC -->
 
 ## Descripción del Proyecto
 Bienvenidos a David, la boutique en línea para la moda de especializada en Hoodies. Aquí encontrarás ropa y accesorios confortables de buena calidad. Nuestra misión es ofrecer estilo en Hoodies y Joggers.
-
+<!-- /TOC -->
 ## Audiencia Objetivo
 David está diseñado para jóvenes adultos que valoran tanto el estilo en ropa deportiva. Nuestros clientes saben que ofrecemos moda oversize.
 
