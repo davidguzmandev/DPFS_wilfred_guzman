@@ -1,15 +1,27 @@
 # David - Tienda virtual
-<!-- TOC -->
+
+
+## Tabla de Contenidos
+- [Descripción del Proyecto](#descripción-del-proyecto)
+- [Audiencia Objetivo](#audiencia-objetivo)
+- [Sobre el Desarrollo](#sobre-el-desarrollo)
+- [Diseño](#sobre-el-desarrollo)
+-- [Wireframes](#sobre-el-desarrollo)
+- [Desarrolladores](#desarrolladores)
+
 
 ## Descripción del Proyecto
 Bienvenidos a David, la boutique en línea para la moda de especializada en Hoodies. Aquí encontrarás ropa y accesorios confortables de buena calidad. Nuestra misión es ofrecer estilo en Hoodies y Joggers.
-<!-- /TOC -->
+
 ## Audiencia Objetivo
 David está diseñado para jóvenes adultos que valoran tanto el estilo en ropa deportiva. Nuestros clientes saben que ofrecemos moda oversize.
 
 
 ## Sobre el Desarrollo
 Este proyecto está siendo desarrollado utilizando Node.js y React, mostrando la versatilidad y potencial de estas tecnologías en la creación de aplicaciones web modernas y eficientes.
+
+## Diseño
+El diseño del logo ha sido elaborado con Corel Draw y Photoshop. El diseño de las prendas de vestir han sido generados con IA.
 
 ### Wireframes
 Todos los Wireframes han sido desarrollados en Figma.
@@ -45,6 +57,6 @@ Todos los Wireframes han sido desarrollados en Figma.
 - [Nike](https://www.nike.com/ca/)
 
 ## Contáctanos
-Para más información, puedes contactarnos a través de nuestro sitio web.
+Para más información, puedes contactarnos a través de email david@gmail.com
 
 ¡Gracias por visitar David, donde cada Hoodie es único!
