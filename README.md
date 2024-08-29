@@ -17,6 +17,22 @@ Todos los Wireframes han sido desarrollados en Figma.
 
     <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/home.jpg?raw=true" alt="Inicio" height="500">
 
+- Producto
+
+    <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/Product.jpg?raw=true" alt="Inicio" height="500">
+
+- Carrito de compras
+
+    <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/Cart.jpg?raw=true" alt="Inicio" height="400">
+
+- Crear Cuenta
+
+    <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/SignIn.jpg?raw=true" alt="Inicio" height="300">
+
+- Iniciar Sesión
+
+    <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/Login.jpg?raw=true" alt="Inicio" height="300">
+
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
 
