@@ -12,8 +12,9 @@ Este proyecto está siendo desarrollado utilizando Node.js y React, mostrando la
 
 ### Wireframes
 Todos los Wireframes han sido desarrollados en Figma.
+
     - Inicio
-    <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/home.jpg?raw=true" alt="Inicio" height="300">
+    <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/home.jpg?raw=true" alt="Inicio" height="500">
 
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
