@@ -1,6 +1,8 @@
 body{
     font-family:"Montserrat", sans-serif;
-    background-color: white
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 .logo img{
@@ -10,8 +12,7 @@ body{
 header{
     display: flex;
     justify-content: center;
-    margin: auto;
-    width:
+    margin: 10px 0;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav ul {
 }
 
 .buscar{
-    
+
     border-radius: 30px;
     border: 0px;
     background-color: white;
@@ -81,7 +82,7 @@ nav ul {
     width: 800px;
     height: 300px;
     position: relative;
-    margin: 130px 0 0 0;
+    margin: 130px 0 150px 0;
 }
 
 .textBanner{
@@ -113,13 +114,67 @@ nav ul {
     margin: 6px 0;
 }
 
+.comprarDiv{
+    margin-left: 280px;
+}
 .comprar {
     border-radius: 30px;
     border: 0;
     padding: 8px 12px;
     font-family:"Montserrat", sans-serif;
     font-weight: 800;
-    margin-left: 280px;
     cursor: pointer;
 }
 
+.franja{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    padding-left: 410px;
+}
+
+.franja img {
+    height: 250px;
+    position: absolute;
+    top: 590px;
+    left: 14%;
+}
+
+.text1 {
+    color: #ffd100;
+    text-align: center;
+}
+.text1 p:first-child{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 200;
+}
+.text1 p:last-child{
+    margin: 0;
+    font-size: 35px;
+    font-weight: 900;
+}
+.text2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 80px;
+    font-weight: 900;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+.text2 p{
+    margin: 0;
+}
+.text3{
+    color: #ffd100;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+}
+.text3 p{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
