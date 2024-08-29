@@ -10,6 +10,9 @@ David está diseñado para jóvenes adultos que valoran tanto el estilo en ropa 
 ## Sobre el Desarrollo
 Este proyecto está siendo desarrollado utilizando Node.js y React, mostrando la versatilidad y potencial de estas tecnologías en la creación de aplicaciones web modernas y eficientes.
 
+### Wireframes
+Todos los Wireframes han sido desarrollados en Figma.
+
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
 
