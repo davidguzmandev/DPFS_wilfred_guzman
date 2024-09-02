@@ -129,17 +129,16 @@ nav ul {
 .franja{
     background-color: black;
     height: 70px;
-    width: 100%;
     display: flex;
     position: relative;
-    padding-left: 410px;
+    justify-content: center;
 }
 
 .franja img {
     height: 250px;
     position: absolute;
-    top: 590px;
-    left: 14%;
+    top: -90px;
+    left: 16%;
 }
 
 .text1 {
