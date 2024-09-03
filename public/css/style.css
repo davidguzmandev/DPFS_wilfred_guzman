@@ -374,3 +374,116 @@ footer {
     padding-top: 5px;
     padding-left: 20px;
 }
+
+.bannerSquareProduct {
+    background-color: #ffd100;
+    border-radius: 30px;
+    width: 800px;
+    height: 300px;
+    position: relative;
+    margin: 130px 0 150px 0;
+}
+
+.bannerSquareProduct img {
+    position: absolute;
+    height: 500px;
+    top: -100px;
+    left: -3%;
+}
+
+.bannerSquareProduct h1{
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+}
+.bannerSquareProduct h5{
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.bannerSquareProduct p{
+    font-size: 14px;
+    padding: 0;
+    margin: 6px 0;
+}
+.textBannerProduct{
+    margin-left: 430px;
+    align-items: center;
+    padding: 40px 0 0 40px;
+}
+
+.talla {
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tallaB {
+    background-color: black;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.price {
+    margin-right: 40px;
+    text-align: end;
+}
+
+.franjaAmarilla{
+    background-color: #ffd100;
+    width: 40%;
+    text-align: end;
+    margin-top: 60px;
+    padding: 15px 20px;
+    border-top-right-radius: 20px;
+    border-end-end-radius: 20px;
+}
+.franjaAmarilla h1{
+    margin: 0;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+}
+.description img{
+    height: 200px;
+}
+.cantidad{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cantidad p{
+    padding: 6px;
+    margin: 0;
+}
+.qty {
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #ffd100;
+    cursor: pointer;
+}
+
+.pedidos{
+    margin-left: 60px;
+    padding: 30px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #ffd100;
+}
+
+.aviso{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
