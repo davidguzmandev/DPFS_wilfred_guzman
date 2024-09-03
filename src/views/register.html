@@ -17,98 +17,46 @@
                 <img src="../../public/images/logo.webp" alt="DavidLogo">
             </a>
             <ul class="menu">
-                <a href="#"><li>MUJERES</li></a>
-                <a href="#"><li>HOMBRES</li></a>
-                <a href="#"><li>NIÑOS</li></a>
-                <a href="#"><li>ACCESORIOS</li></a>
-                <a href="#"><li class="buscar"></a>
+                <li>MUJERES</li>
+                <li>HOMBRES</li>
+                <li>NIÑOS</li>
+                <li>ACCESORIOS</li>
+                <li class="buscar">
                     <input type="text" placeholder="buscar">
                 </li>
             </ul>
-            <a href="/src/views/login.html" class="user">
+            <a href="#" class="user">
                 <img src="../icons/user.svg" alt="Iniciar Sesion">
             </a>
         </nav>
     </header>
-    <!-- Componente banner -->
-    <div class="banner">
-        <div class="bannerSquare">
-            <img src="../../public/images/men.webp" alt="Hoodies">
-            <div class="textBanner">
-                <h1>DESCUBRE TU ESTILO</h1>
-                <h5>Encuentra el estilo perfecto para cada momento.</h5>
-                <p>Explora nuestra coleccion de <strong>hoodies</strong> de diseño único.</p>
-                <div class="comprarDiv"><a href="/src/views/productDetail.html"><button class="comprar">COMPRAR</button></a></div>
-            </div>
+
+    <!-- Componente registo -->
+    
+    <div class="crearcuenta">
+        <div class="prom">
+            <p>Únase al programa de fidelización Preferred. Los miembro obtienen:</p>
+            <p>- 1$ gastado = 1 punto</p>
+            <p>- 200 puntos = $20 de recompensa</p>
+            <p>- Pago rápido y sencillo</p>
+            <p>- Regalo especial de cumpleaños</p>
+        </div>
+        <div class="cuenta">
+            <h1>Crear Cuenta</h1>
+            <input type="text" name="nombre" placeholder="Nombre*">
+            <input type="text" name="apellido" placeholder="Apellido*">
+            <input type="email" name="email" placeholder="Correo electrónico*">
+            <input type="password" name="contrasena" placeholder="Contraseña*">
         </div>
     </div>
-    <!-- Componente Franja -->
-    <div class="franja">
-        <img src="../../public/images/cap.webp" alt="Gorra">
-        <div class="text1">
-            <p>TODAS LAS</p>
-            <p>GORRAS</p>
+    <div class="end">
+        <div class="conditions">
+            <input type="checkbox" name="conditions">
+            <p>Cuando esta casilla está marcada, acepto los Términos y condiciones y recibir actualizaciones sobre los últimos productos y promociones por correo electrónico u otros canales. Consulte la Política de privacidad , que incluye nuestro Aviso de incentivo financiero , para obtener más información.</p>
         </div>
-        <div class="text2">
-            <p>$12.99</p>
-        </div>
-        <div class="text3">
-            <p>POR TIEMPO LIMITADO</p>
-            <button class="comprar">COMPRAR</button>
-        </div>
+        <button class="cuentaButton">CREAR CUENTA</button>
     </div>
-    <!-- Componente Productos -->
-    <div class="productos1">
-        <div class="section">
-            <div class="container">
-                <img src="/public/images/white_hoodie.webp" alt="Hoodie Blanco">
-            </div>
-            <div class="textProduct">
-                <p>Hoodie Blanco Boxy</p>
-                <p><strong>$56.99</strong></p>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container2">
-                <img src="/public/images/black_hoodie.webp" alt="Hoodie Blanco">
-            </div>
-            <div class="textProduct">
-                <p>Hoodie Negro Cuero</p>
-                <p><span style="text-decoration: line-through;">$79.99</span> <strong style="color: red;">$59.99</strong></p>
-            </div>
-        </div>
-    </div>
-    <div class="productos2">
-        <div class="section">
-            <div class="container2">
-                <img src="/public/images/hoodie_green.webp" alt="Hoodie Blanco">
-            </div>
-            <div class="textProduct">
-                <p>Hoodie Rojo Verde</p>
-                <p><strong>$62.99</strong></p>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container3">
-                <img src="/public/images/blue_hoodie.webp" alt="Hoodie Azul">
-            </div>
-            <div class="textProduct">
-                <p>Hoodie Azul Stretch</p>
-                <p><strong>$61.99</strong></p>
-            </div>
-        </div>
-    </div>
-    <!-- Componente Joggers -->
-    <div class="banner2">
-        <div class="bannerSquare2">
-            <img src="../../public/images/jogger.webp" alt="Jogger">
-            <div class="textBanner2">
-                <span>JOGGERS</span>
-                <p>Una combinación para cada día</p>
-                <button class="comprar">VER TODOS</button>
-            </div>
-        </div>
-    </div>
+    
     <!-- Componente Footer -->
     <footer>
         <div class="footerMenu">
