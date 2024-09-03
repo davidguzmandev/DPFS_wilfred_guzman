@@ -6,6 +6,8 @@
 - [Sobre el Desarrollo](#sobre-el-desarrollo)
 - [Diseño](#sobre-el-desarrollo)
     - [Wireframes](#sobre-el-desarrollo)
+- [Sprint 2](#sprint-2)
+- [Sprint 3](#sprint-3)
 - [Desarrolladores](#desarrolladores)
 
 
@@ -48,13 +50,13 @@ Todos los Wireframes han sido desarrollados en Figma.
 ### Sprint 2
 Archivo retro.md con el resultado de la retrospectiva.
 
--Home (index.html)
--Detalle del producto (productDetail.html)
--Carrito de compras (productCart.html)
--Formulario de registro (register.html)
--Formulario de login (login.html)
+-Home (index.html)  
+-Detalle del producto (productDetail.html)  
+-Carrito de compras (productCart.html)  
+-Formulario de registro (register.html)  
+-Formulario de login (login.html)  
 
-### Sprint 4
+### Sprint 3
 En construcción
 
 ### Desarrolladores:
