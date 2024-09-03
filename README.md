@@ -45,6 +45,18 @@ Todos los Wireframes han sido desarrollados en Figma.
 
     <img src="https://github.com/davidguzmandev/DPFS_wilfred_guzman/blob/main/Design/Wireframes/Login.jpg?raw=true" alt="Inicio" height="300">
 
+### Sprint 2
+Archivo retro.md con el resultado de la retrospectiva.
+
+-Home (index.html)
+-Detalle del producto (productDetail.html)
+-Carrito de compras (productCart.html)
+-Formulario de registro (register.html)
+-Formulario de login (login.html)
+
+### Sprint 4
+En construcción
+
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
 
