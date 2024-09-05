@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('partials/head')  %>
+<body>
+    <!-- Componente Header -->
+    <%- include('partials/header')  %>
+    <!-- Componente banner -->
+    <div class="banner">
+        <div class="bannerSquare">
+            <img src="/images/men.webp" alt="Hoodies">
+            <div class="textBanner">
+                <h1>DESCUBRE TU ESTILO</h1>
+                <h5>Encuentra el estilo perfecto para cada momento.</h5>
+                <p>Explora nuestra coleccion de <strong>hoodies</strong> de diseño único.</p>
+                <div class="comprarDiv"><a href="/src/views/productDetail.html"><button class="comprar">COMPRAR</button></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- Componente Franja -->
+    <div class="franja">
+        <img src="/images/cap.webp" alt="Gorra">
+        <div class="text1">
+            <p>TODAS LAS</p>
+            <p>GORRAS</p>
+        </div>
+        <div class="text2">
+            <p>$12.99</p>
+        </div>
+        <div class="text3">
+            <p>POR TIEMPO LIMITADO</p>
+            <button class="comprar">COMPRAR</button>
+        </div>
+    </div>
+    <!-- Componente Productos -->
+    <div class="productos1">
+        <div class="section">
+            <div class="container">
+                <img src="/images/white_hoodie.webp" alt="Hoodie Blanco">
+            </div>
+            <div class="textProduct">
+                <p>Hoodie Blanco Boxy</p>
+                <p><strong>$56.99</strong></p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container2">
+                <img src="/images/black_hoodie.webp" alt="Hoodie Blanco">
+            </div>
+            <div class="textProduct">
+                <p>Hoodie Negro Cuero</p>
+                <p><span style="text-decoration: line-through;">$79.99</span> <strong style="color: red;">$59.99</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="productos2">
+        <div class="section">
+            <div class="container2">
+                <img src="/images/hoodie_green.webp" alt="Hoodie Blanco">
+            </div>
+            <div class="textProduct">
+                <p>Hoodie Rojo Verde</p>
+                <p><strong>$62.99</strong></p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container3">
+                <img src="/images/blue_hoodie.webp" alt="Hoodie Azul">
+            </div>
+            <div class="textProduct">
+                <p>Hoodie Azul Stretch</p>
+                <p><strong>$61.99</strong></p>
+            </div>
+        </div>
+    </div>
+    <!-- Componente Joggers -->
+    <div class="banner2">
+        <div class="bannerSquare2">
+            <img src="/images/jogger.webp" alt="Jogger">
+            <div class="textBanner2">
+                <span>JOGGERS</span>
+                <p>Una combinación para cada día</p>
+                <button class="comprar">VER TODOS</button>
+            </div>
+        </div>
+    </div>
+    <!-- Componente Footer -->
+    <%- include('partials/footer')  %>
+    
+    <script src="/src/components/burger.js"></script>
+</body>
+</html>

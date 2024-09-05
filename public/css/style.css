@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family:"Montserrat", sans-serif;
     background-color: white;
@@ -154,6 +160,12 @@ ul{
     left: 16%;
 }
 
+@media only screen and (max-width: 1549px) {
+    .franja img {
+        visibility: hidden;
+    }
+  }
+
 .text1 {
     color: #ffd100;
     text-align: center;
@@ -300,12 +312,12 @@ ul{
     color: white;
     z-index: 2;
     left: 20%;
-    top: 20px;
+    top: 10px;
 }
 
 .textBanner2{
     align-items: center;
-    padding: 120px 0px 0px 0px;
+    padding: 140px 0px 0px 0px;
     margin-left: 100px;
     text-align: center;
     font-size: 25px;
@@ -324,6 +336,18 @@ footer {
     padding: 50px 200px 20px 330px;
     color: white;
 }
+
+@media only screen and (max-width: 1159px) {
+    footer {
+        padding: 50px 150px 20px 150px;
+    }
+  }
+
+@media only screen and (max-width: 935px) {
+    footer {
+        padding: 50px 90px 20px 90px;
+    }
+  }
 
 .footerMenu{
     display: flex;
@@ -597,4 +621,3 @@ footer {
     backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
     background-color: rgba(255, 255, 255, 0.2); /* Opción: agrega un color de fondo con transparencia */
 }
-
