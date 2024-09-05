@@ -4,6 +4,7 @@ const path = require('path');
 const indexRouter = require('./src/routes/index');
 const productsRouter = require('./src/routes/products');
 const productDetailRouter = require('./src/routes/productDetail');
+const cartRouter = require('./src/routes/cart');
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.set('views', './src/views');
 app.use('/', indexRouter);
 app.use('/products', productsRouter);
 app.use('/productDetail', productDetailRouter);
+app.use('/productCart', cartRouter);
 
 //Server
 app.listen(3000, () => {

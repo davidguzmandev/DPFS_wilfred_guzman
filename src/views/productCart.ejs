@@ -1,44 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David - Tienda de Hoodies</title>
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <%- include('partials/head')  %>
 <body>
     <!-- Componente Header -->
-    <header>
-        <nav>
-            <a href="#" class="logo">
-                <img src="../../public/images/logo.webp" alt="DavidLogo">
-            </a>
-            <ul class="menu">
-                <li>MUJERES</li>
-                <li>HOMBRES</li>
-                <li>NIÑOS</li>
-                <li>ACCESORIOS</li>
-                <li class="buscar">
-                    <input type="text" placeholder="buscar">
-                </li>
-            </ul>
-            <a href="#" class="user">
-                <img src="../icons/user.svg" alt="Iniciar Sesion">
-            </a>
-        </nav>
-    </header>
-    <!-- Componente fraja amarilla -->
-    <div class="franjaAmarilla">
-        <h1>Carrito de Compras</h1>
-    </div>
+    <%- include('partials/header')  %>
     <!-- Componente banner -->
     <div class="description">
         <div>
             <h2>Productos</h2>
-            <img src="../../public/images/black_hoodie.webp" alt="Hoodies">
+            <img src="/images/black_hoodie.webp" alt="Hoodies">
         </div>
         <div>
             <br>
@@ -75,7 +45,7 @@
     <div class="productos1">
         <div class="section">
             <div class="container">
-                <img src="/public/images/white_hoodie.webp" alt="Hoodie Blanco">
+                <img src="/images/white_hoodie.webp" alt="Hoodie Blanco">
             </div>
             <div class="textProduct">
                 <p>Hoodie Blanco Boxy</p>
@@ -84,7 +54,7 @@
         </div>
         <div class="section">
             <div class="container2">
-                <img src="/public/images/black_hoodie.webp" alt="Hoodie Blanco">
+                <img src="/images/black_hoodie.webp" alt="Hoodie Blanco">
             </div>
             <div class="textProduct">
                 <p>Hoodie Negro Cuero</p>
@@ -92,60 +62,8 @@
             </div>
         </div>
     </div>
-    <!-- Componente Footer -->
-    <footer>
-        <div class="footerMenu">
-            <div class="nosotros">
-                <div class="iconHoodie">
-                    <img src="../../public/images/icon.webp" alt="Hoodie Icon">
-                </div>
-                <h3>Sobre Nosotros</h3>
-                <ul>
-                    <li>Derechos Reservados</li>
-                    <li>Inclusion y Diversidad</li>
-                    <li>Empleo</li>
-                    <li>Franquicias</li>
-                    <li>Mapa de Sitio</li>
-                </ul>
-            </div>
-            <div class="tienda">
-                <h3>Tienda</h3>
-                <ul>
-                    <li>Mujeres</li>
-                    <li>Hombres</li>
-                    <li>Niños</li>
-                    <li>Accesorios</li>
-                    <li>Cupones</li>
-                </ul>
-            </div>
-            <div class="ayuda">
-                <h3>Ayuda</h3>
-                <ul>
-                    <li>Soporte</li>
-                    <li>Seguimiento</li>
-                    <li>Devoluciones</li>
-                    <li>Envíos</li>
-                    <li>FAQ's</li>
-                    <li>Accesibilidad</li>
-                </ul>
-            </div>
-            <div class="contacto">
-                <p>Suscríbete para recibir noticias sobre nuestras últimas llegadas, promociones exclusivas y eventos.</p>
-                <span><button class="ofertas">¡OFERTAS EXCLUSIVAS!</button></span>
-                <h3>Contactenos</h3>
-                <p>Soprte 24/7 para todos nuestros clientes</p>
-                <span><button class="ofertas">¡ESCRIBENOS!</button></span>
-                <div class="social">
-                    <svg  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
-                    <svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
-                    <svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
-                    <svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="footer">
-        <p>© 2024 Hecho con ♥ por David Guzman</p>
-    </div>
+<!-- Componente Footer -->
+<%- include('partials/footer')  %>
+    
 </body>
 </html>
