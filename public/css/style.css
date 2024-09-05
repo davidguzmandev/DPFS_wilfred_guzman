@@ -584,7 +584,7 @@ footer {
 }
 
 
-.login p{
+.login p:first-child{
     padding: 20px;
     text-align: start;
 }

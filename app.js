@@ -5,6 +5,8 @@ const indexRouter = require('./src/routes/index');
 const productsRouter = require('./src/routes/products');
 const productDetailRouter = require('./src/routes/productDetail');
 const cartRouter = require('./src/routes/cart');
+const loginRouter = require('./src/routes/login');
+const registerRouter = require('./src/routes/register');
 
 const app = express();
 
@@ -24,6 +26,8 @@ app.use('/', indexRouter);
 app.use('/products', productsRouter);
 app.use('/productDetail', productDetailRouter);
 app.use('/productCart', cartRouter);
+app.use('/login', loginRouter);
+app.use('/register', registerRouter);
 
 //Server
 app.listen(3000, () => {

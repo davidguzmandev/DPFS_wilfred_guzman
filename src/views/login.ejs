@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David - Tienda de Hoodies</title>
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <%- include('partials/head')  %>
 <body>
     <!-- Componente Header -->
     <div class="content">
     </div>
     <header>
         <nav>
-            <a href="#" class="logo">
-                <img src="../../public/images/logo.webp" alt="DavidLogo">
+            <a href="/" class="logo">
+                <img src="/images/logo.webp" alt="DavidLogo">
             </a>
             <ul class="menu">
-                <li>MUJERES</li>
-                <li>HOMBRES</li>
-                <li>NIÑOS</li>
-                <li>ACCESORIOS</li>
+                <a href="/products"><li>MUJERES</li></a>
+                <a href="/products"><li>HOMBRES</li></a>
+                <a href="/products"><li>NIÑOS</li></a>
+                <a href="/products"><li>ACCESORIOS</li></a>
                 <li class="buscar">
                     <input type="text" placeholder="buscar">
                 </li>
             </ul>
-            <a href="#" class="user">
-                <img src="../icons/user.svg" alt="Iniciar Sesion">
+            <a href="/login" class="user">
+                <img src="/icons/user.svg" alt="Iniciar Sesion">
+            </a>
+            <a href="/productCart" class="user">
+                <img src="/icons/cart.svg" alt="Carrito">
             </a>
         </nav>
     </header>
@@ -52,7 +47,7 @@
     
     
     <div class="login">
-        <p><a href="#">X</a></p>
+        <p><a href="/">X</a></p>
         <div>
             <h1>Iniciar Sesion</h1>
         </div>
@@ -61,6 +56,7 @@
             <input type="password" name="contrasena" placeholder="Contraseña*">
         </div>
         <button class="cuentaButton">INICIAR SESION</button>
+        <p>¿No tienes una cuenta? <a href="/register"><strong>Crear cuenta</strong></a></p>
     </div>
 </body>
 </html>
