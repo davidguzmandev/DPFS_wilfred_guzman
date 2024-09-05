@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('partials/head')  %>
+<body>
+    <div class="containerCreateProduct">
+        <a href="/createProduct" class="logo">
+            <img src="/images/logo.webp" alt="DavidLogo">
+        </a>
+        <h1>Crear Producto</h1>
+        <div class="containerProduct">
+            
+            <form action="">
+                <label for="">Nombre</label>
+                <input type="text">
+
+                <label for="">Descripción</label>
+                <input type="text" name="" id="">
+
+                <label for="">Precio</label>
+                <input type="text" name="" id="">
+
+                <label for="">Categoria:</label><br>
+            <div class="categoria">
+                <label for="hoodie">Hoodie</label><br>
+                <input type="radio" id="hoodie" name="categoria" value="hoodie">
+                <label for="jogger">Jogger</label><br>  
+                <input type="radio" id="jogger" name="categoria" value="jogger">
+                <label for="accesorios">Accesorios</label>
+                <input type="radio" id="accesorios" name="categoria" value="accesorios">
+            </div>
+            
+                <label for="">Color</label>
+                <select name="colors" id="colors">
+                    <option value="negro">Negro</option>
+                    <option value="blanco">Blanco</option>
+                    <option value="azul">Azul</option>
+                    <option value="Rojo">Rojo</option>
+                </select>
+
+                <label for="">Imagen</label>
+                <input type="file" id="imageFile" accept="image/*" multiple />
+
+                <button type="submit">Cargar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

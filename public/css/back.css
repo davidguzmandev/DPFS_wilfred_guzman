@@ -1,0 +1,44 @@
+.containerCreateProduct{
+    margin: 50px 100px 50px 200px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerCreateProduct input{
+    padding: 15px 10px 15px 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #e9e9e9;
+    margin: 20px 0;
+}
+
+.containerCreateProduct select{
+    padding: 15px 10px 15px 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #e9e9e9;
+    margin: 20px 0;
+}
+
+.containerCreateProduct button{
+    border-radius: 10px;
+    border: 0;
+    padding: 8px 10px 8px 10px;
+}
+
+.categoria{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.categoria label{
+    margin: 0 10px 0 0;
+}
+.categoria input{
+    margin: 0 50px 0 0;
+}

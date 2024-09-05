@@ -7,6 +7,7 @@ const productDetailRouter = require('./src/routes/productDetail');
 const cartRouter = require('./src/routes/cart');
 const loginRouter = require('./src/routes/login');
 const registerRouter = require('./src/routes/register');
+const createProductRouter = require('./src/routes/createProduct');
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use('/productDetail', productDetailRouter);
 app.use('/productCart', cartRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
+app.use('/createProduct', createProductRouter);
 
 //Server
 app.listen(3000, () => {
