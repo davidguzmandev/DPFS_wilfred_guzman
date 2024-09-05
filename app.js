@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 
 const indexRouter = require('./src/routes/index');
+const productsRouter = require('./src/routes/products');
+const productDetailRouter = require('./src/routes/productDetail');
 
 const app = express();
 
@@ -18,6 +20,8 @@ app.set('views', './src/views');
 
 // Rutas
 app.use('/', indexRouter);
+app.use('/products', productsRouter);
+app.use('/productDetail', productDetailRouter);
 
 //Server
 app.listen(3000, () => {
