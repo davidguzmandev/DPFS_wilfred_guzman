@@ -57,7 +57,14 @@ Archivo retro.md con el resultado de la retrospectiva.
 -Formulario de login (login.html)  
 
 ### Sprint 3
-En construcción
+Aplicación Node.js + Express.js + EJS con:
+-Archivos parciales (head, header, footer, etc.)
+-Home
+-Listado de productos
+-Detalle del producto
+-Carrito de productos
+-Formulario de registro y login
+-Formulario de carga y edición de productos
 
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
