@@ -45,5 +45,38 @@ form{
 
 .containerProduct{
     display: flex;
-    
+    margin-bottom: 40px;
+}
+
+.containerProduct p{
+     margin: 10px 0;
+}
+
+.listProduct{
+   display: inline-block;
+}
+
+.listProduct img{
+    text-align: center;
+ }
+
+.editar {
+    border-radius: 30px;
+    border: 0;
+    padding: 8px 12px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.eliminar {
+    border-radius: 30px;
+    border: 0;
+    padding: 8px 12px;
+    font-family:"Montserrat", sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: rgb(136, 4, 4);
+    color: white;
 }
