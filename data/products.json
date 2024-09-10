@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name_product": "Hoodie Boxy",
+    "description": "Tejido elástico. \n Capucha con cordón para un ajuste regulable",
+    "price": "$59.99",
+    "category_product": "Hoodie",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Blanco", "Negro"],
+    "image": "/images/white_hoodie.webp"
+  },
+  {
+    "id": 2,
+    "name_product": "Hoodie Cuero",
+    "description": "Tejido elástico. \n Capucha con cordón para un ajuste regulable",
+    "price": "$56.99",
+    "category_product": "Hoodie",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Blanco", "Negro"],
+    "image": "/images/black_hoodie.webp"
+  },
+  {
+    "id": 3,
+    "name_product": "Hoodie Rojo Verde",
+    "description": "Tejido elástico. \n Capucha con cordón para un ajuste regulable",
+    "price": "$62.99",
+    "category_product": "Hoodie",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Rojo Verde"],
+    "image": "/images/hoodie_green.webp"
+  },
+  {
+    "id": 4,
+    "name_product": "Hoodie Stretch",
+    "description": "Tejido elástico. \n Capucha con cordón para un ajuste regulable",
+    "price": "$61.99",
+    "category_product": "Hoodie",
+    "size": ["S", "M", "L", "XL"],
+    "color": ["Azul", "Negro"],
+    "image": "/images/blue_hoodie.webp"
+  }
+]

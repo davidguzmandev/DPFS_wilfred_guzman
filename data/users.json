@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "firstName": "Alfie",
+    "lastName": "Dennehy",
+    "email": "adennehy0@hugedomains.com",
+    "password": "sP6\"bEJ6&Rd",
+    "type": "Staff",
+    "avatar": "/images/avatars/pretzel.jpg"
+  },
+  {
+    "id": 2,
+    "firstName": "Xenos",
+    "lastName": "Winkell",
+    "email": "xwinkell1@sciencedirect.com",
+    "password": "oH8)F@BIwp1x",
+    "type": "Customer",
+    "avatar": "/images/avatars/kipa.jpg"
+  },
+  {
+    "id": 3,
+    "firstName": "Hunt",
+    "lastName": "Colegate",
+    "email": "hcolegate2@forbes.com",
+    "password": "gS8,yV%A}{Es",
+    "type": "Customer",
+    "avatar": "/images/avatars/pletzale.jpg"
+  },
+  {
+    "id": 4,
+    "firstName": "Ben",
+    "lastName": "Greenin",
+    "email": "bgreenin3@discovery.com",
+    "password": "wF4>*`gFXep",
+    "type": "Staff",
+    "avatar": "/images/avatars/polloCorazon.jpg"
+  }
+]
