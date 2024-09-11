@@ -46,6 +46,7 @@ form{
 .containerProduct{
     display: flex;
     margin-bottom: 40px;
+    gap: 20px;
 }
 
 .containerProduct p{
