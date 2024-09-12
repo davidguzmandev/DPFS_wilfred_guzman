@@ -23,15 +23,19 @@ app.set('view engine', 'ejs');
 // Especifica la carpeta donde están las vistas
 app.set('views', './src/views');
 
-// Rutas
+// Rutas Frontend
 app.use('/', indexRouter);
 app.use('/products', productsRouter);
 app.use('/productDetail', productDetailRouter);
 app.use('/productCart', cartRouter);
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
+
+// Rutas Backend
 app.use('/createProduct', createProductRouter);
 app.use('/listProducts', listProductsRouter);
+
+
 
 //Server
 app.listen(3000, () => {

@@ -17,7 +17,7 @@ const productController = {
     // Listado de productos
     list: (req, res) => {
         const products = getProducts();
-        res.render('/listProducts', { products });
+        res.render('listProducts', { products });
     },
 
     // Mostrar formulario de creación
@@ -75,7 +75,7 @@ const productController = {
             };
             saveProducts(products);
         }
-        res.redirect('/products');
+        res.redirect('/listProducts');
     },
 
     // Borrar un producto
@@ -83,7 +83,7 @@ const productController = {
         const products = getProducts();
         const filteredProducts = products.filter(p => p.id != req.params.id);
         saveProducts(filteredProducts);
-        res.redirect('/products');
+        res.redirect('/listProducts');
     }
 };
 module.exports = productController;

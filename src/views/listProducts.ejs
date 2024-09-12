@@ -9,50 +9,19 @@
         <h1>Listado de Productos</h1>
         <h3>4 Productos encontrados</h3>
         <div class="listProduct">
-            <div class="containerProduct">
-                <img src="/images/white_hoodie.webp" height="150px" alt="Hoodie Blanco">
-                <div>
-                    <p>Codigo: 1</p>
-                    <p>Nombre: <strong>Hoodie Boxy</strong></p>
-                    <p>Precio: $59.99</p>
-                    <p>Color: Blanco</p>
-                    <a href="/" class="editar">Editar</a>
-                    <a href="/" class="eliminar">Eliminar</a>
+            <% products.forEach(product => { %>
+                <div class="containerProduct">
+                    <img src="<%= product.image %>" height="150px" alt="<%= product.name_product %>">
+                    <div>
+                        <p>Código: <%= product.id %></p>
+                        <p>Nombre: <strong><%= product.name_product %></strong></p>
+                        <p>Precio: <%= product.price %></p>
+                        <p>Color: <%= product.color.join(', ') %></p>
+                        <a href="/listProducts/<%= product.id %>/edit" class="editar">Editar</a>
+                        <a href="/listProducts/<%= product.id %>?_method=DELETE" class="eliminar" onclick="return confirm('¿Estás seguro de eliminar este producto?');">Eliminar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="containerProduct">
-                <img src="/images/white_hoodie.webp" height="150px" alt="Hoodie Blanco">
-                <div>
-                    <p>Codigo: 1</p>
-                    <p>Nombre: <strong>Hoodie Boxy</strong></p>
-                    <p>Precio: $59.99</p>
-                    <p>Color: Blanco</p>
-                    <a href="/" class="editar">Editar</a>
-                    <a href="/" class="eliminar">Eliminar</a>
-                </div>
-            </div>
-            <div class="containerProduct">
-                <img src="/images/white_hoodie.webp" height="150px" alt="Hoodie Blanco">
-                <div>
-                    <p>Codigo: 1</p>
-                    <p>Nombre: <strong>Hoodie Boxy</strong></p>
-                    <p>Precio: $59.99</p>
-                    <p>Color: Blanco</p>
-                    <a href="/" class="editar">Editar</a>
-                    <a href="/" class="eliminar">Eliminar</a>
-                </div>
-            </div>
-            <div class="containerProduct">
-                <img src="/images/white_hoodie.webp" height="150px" alt="Hoodie Blanco">
-                <div>
-                    <p>Codigo: 1</p>
-                    <p>Nombre: <strong>Hoodie Boxy</strong></p>
-                    <p>Precio: $59.99</p>
-                    <p>Color: Blanco</p>
-                    <a href="/" class="editar">Editar</a>
-                    <a href="/" class="eliminar">Eliminar</a>
-                </div>
-            </div>
+            <% }) %>
         </div>
     </div>
 
