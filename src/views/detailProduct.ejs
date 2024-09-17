@@ -7,6 +7,7 @@
             <img src="/images/logo.webp" alt="DavidLogo">
         </div>
         <h1>Detalle del Producto</h1>
+        <a href="/listProducts" class="editar">Volver a la lista</a>
 
             <div>
                 <img src="<%= product.image %>" alt="<%= product.name_product %>" height="300px">
@@ -17,8 +18,9 @@
                 <p><strong>Colores:</strong> <%= product.color.join(', ') %></p>
                 <p><strong>Tamaños disponibles:</strong> <%= product.size.join(', ') %></p>
             </div>
-
-            <a href="/listProducts">Volver a la lista</a>
+            
+            <a href="/listProducts/<%= product.id %>/edit" class="editar">Editar</a>
+            <a href="/listProducts/<%= product.id %>?_method=DELETE" class="eliminar" onclick="return confirm('¿Estás seguro de eliminar este producto?');">Eliminar</a>
     </div>
 
 </body>
