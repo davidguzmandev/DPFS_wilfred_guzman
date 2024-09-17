@@ -9,7 +9,7 @@ const loginRouter = require('./src/routes/login');
 const registerRouter = require('./src/routes/register');
 const createProductRouter = require('./src/routes/createProduct');
 const listProductsRouter = require('./src/routes/listProducts');
-const detailProductRouter = require('./src/routes/detailProduct');
+
 
 const app = express();
 
@@ -35,7 +35,7 @@ app.use('/register', registerRouter);
 // Rutas Backend
 app.use('/createProduct', createProductRouter);
 app.use('/listProducts', listProductsRouter);
-app.use('/detailProduct', detailProductRouter);
+
 
 
 
