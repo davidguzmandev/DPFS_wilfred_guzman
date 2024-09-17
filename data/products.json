@@ -26,7 +26,7 @@
     "price": "$62.99",
     "category_product": "Hoodie",
     "size": ["S", "M", "L", "XL"],
-    "color": ["Rojo Verde"],
+    "color": ["Rojo", "Verde"],
     "image": "/images/hoodie_green.webp"
   },
   {

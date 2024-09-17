@@ -1,11 +1,16 @@
 const fs = require('fs');
 const path = require('path');
-const productsFilePath = path.join(__dirname, '../data/products.json');
+const productsFilePath = path.join(__dirname, '../../data/products.json');
 
 // Helper function to read JSON file
 const getProducts = () => {
-    const data = fs.readFileSync(productsFilePath, 'utf-8');
-    return JSON.parse(data);
+    try {
+        const data = fs.readFileSync(productsFilePath, 'utf-8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.error('Error al leer el archivo de productos:', error);  // Muestra el error si no se puede leer el archivo
+        return [];  // Devuelve un array vacío si ocurre un error
+    }
 };
 
 // Helper function to write JSON file

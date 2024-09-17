@@ -4,15 +4,15 @@ const productController = require('../controllers/productController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('listProducts', { title: 'Listado de Productos'});
+  productController.list(req, res);
 });
 
-// Listado de productos
-router.get('/', productController.list);
+/* // Listado de productos
+router.get('/', productController.list); */
 
 // Crear producto
-router.get('/create', productController.createForm);
-router.post('/', productController.create);
+/* router.get('/create', productController.createForm);
+router.post('/', productController.create); */
 
 // Editar producto
 router.get('/:id/edit', productController.editForm);
