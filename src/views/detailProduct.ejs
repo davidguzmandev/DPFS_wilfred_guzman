@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('partials/head')  %>
+<body>
+    <div class="containerCreateProduct">
+        <div class="logo">
+            <img src="/images/logo.webp" alt="DavidLogo">
+        </div>
+        <h1>Detalle del Producto</h1>
+
+            <div>
+                <img src="<%= product.image %>" alt="<%= product.name_product %>" height="300px">
+                <h2>Nombre: <%= product.name_product %></h2>
+                <p><strong>Código:</strong> <%= product.id %></p>
+                <p><strong>Precio:</strong> <%= product.price %></p>
+                <p><strong>Descripción:</strong> <%= product.description %></p>
+                <p><strong>Colores:</strong> <%= product.color.join(', ') %></p>
+                <p><strong>Tamaños disponibles:</strong> <%= product.size.join(', ') %></p>
+            </div>
+
+            <a href="/listProducts">Volver a la lista</a>
+    </div>
+
+</body>
+</html>

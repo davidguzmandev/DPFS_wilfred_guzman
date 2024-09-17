@@ -2,14 +2,14 @@ var express = require('express');
 var router = express.Router();
 const productController = require('../controllers/productController');
 
-/* GET home page. */
+/* Detalle del producto */
 router.get('/', function(req, res, next) {
-  productController.list(req, res);
+  productController.detail(req, res);
 });
 
-// Detalle de producto
-router.get('/:id', function(req, res, next) {
-  productController.detail(req, res);
+/* GET home page. */
+router.get('/listProducts', function(req, res, next) {
+  productController.list(req, res);
 });
 
 // Crear producto
@@ -18,7 +18,6 @@ router.post('/', productController.create);
 
 // Editar producto
 router.get('/:id/edit', productController.editForm);
-
 router.put('/:id', productController.update);
 
 // Eliminar producto

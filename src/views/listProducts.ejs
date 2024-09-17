@@ -3,15 +3,17 @@
     <%- include('partials/head')  %>
 <body>
     <div class="containerCreateProduct">
-        <a href="/createProduct" class="logo">
+        <div class="logo">
             <img src="/images/logo.webp" alt="DavidLogo">
-        </a>
+        </div>
         <h1>Listado de Productos</h1>
         <h3>4 Productos encontrados</h3>
         <div class="listProduct">
             <% products.forEach(product => { %>
                 <div class="containerProduct">
-                    <img src="<%= product.image %>" height="150px" alt="<%= product.name_product %>">
+                    <a href="/listProducts/<%= product.id %>">
+                        <img src="<%= product.image %>" height="150px" alt="<%= product.name_product %>">
+                    </a>
                     <div>
                         <p>Código: <%= product.id %></p>
                         <p>Nombre: <strong><%= product.name_product %></strong></p>

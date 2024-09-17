@@ -53,7 +53,7 @@ const productController = {
     detail: (req, res) => {
         const products = getProducts();
         const product = products.find(p => p.id == req.params.id);
-        res.render('products/detail', { product });
+        res.render('detailProduct', { product });
     },
 
     // Mostrar formulario de edición
