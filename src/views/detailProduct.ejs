@@ -19,7 +19,7 @@
                 <p><strong>Tamaños disponibles:</strong> <%= product.size.join(', ') %></p>
             </div>
             
-            <a href="/listProducts/<%= product.id %>/edit" class="editar">Editar</a>
+            <a href="/listProducts/<%= product.id %>/editProduct" class="editar">Editar</a>
             <a href="/listProducts/<%= product.id %>?_method=DELETE" class="eliminar" onclick="return confirm('¿Estás seguro de eliminar este producto?');">Eliminar</a>
     </div>
 

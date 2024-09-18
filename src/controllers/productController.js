@@ -60,27 +60,42 @@ const productController = {
     editForm: (req, res) => {
         const products = getProducts();
         const product = products.find(p => p.id == req.params.id);
-        res.render('products/edit', { product });
+        res.render('editProduct', { product });
     },
 
     // Actualizar un producto
     update: (req, res) => {
-        const products = getProducts();
-        const productIndex = products.findIndex(p => p.id == req.params.id);
-        if (productIndex !== -1) {
-            products[productIndex] = {
+        try {
+            const products = getProducts();
+            const productIndex = products.findIndex(p => p.id == req.params.id);
+    
+            if (productIndex === -1) {
+                return res.status(404).send('Producto no encontrado');
+            }
+
+            const newImage = req.file ? `/images/${req.file.filename}` : existingProduct.image;
+
+            const existingProduct = products[productIndex];
+
+            const updatedProduct = {
                 ...products[productIndex],
                 name_product: req.body.name_product,
                 price: req.body.price,
                 description: req.body.description,
                 category_product: req.body.category_product,
-                size: req.body.size.split(','),
-                color: req.body.color.split(','),
-                image: req.body.image
+                size: req.body.size ? req.body.size.split(',') : existingProduct.size, // Manejar caso en que req.body.size sea undefined
+                color: req.body.color ? req.body.color.split(',') : existingProduct.color, // Manejar caso en que req.body.color sea undefined
+                image: newImage  // Usa la nueva imagen si se ha subido una
             };
+    
+            products[productIndex] = updatedProduct;
+    
             saveProducts(products);
+            res.redirect('/listProducts');
+        } catch (error) {
+            console.error('Error al actualizar el producto:', error);
+            res.status(500).send('Error interno del servidor');
         }
-        res.redirect('/listProducts');
     },
 
     // Borrar un producto

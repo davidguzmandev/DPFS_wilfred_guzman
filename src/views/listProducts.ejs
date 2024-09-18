@@ -19,8 +19,8 @@
                         <p>Nombre: <strong><%= product.name_product %></strong></p>
                         <p>Precio: <%= product.price %></p>
                         <p>Color: <%= product.color.join(', ') %></p>
-                        <a href="/listProducts/<%= product.id %>" class="editar">Ver Mas</a>
-                        <a href="/listProducts/<%= product.id %>/edit" class="editar">Editar</a>
+                        <a href="/listProducts/<%= product.id %>" class="editar">Detalle</a>
+                        <a href="/listProducts/<%= product.id %>/editProduct" class="editar">Editar</a>
                         <a href="/listProducts/<%= product.id %>?_method=DELETE" class="eliminar" onclick="return confirm('¿Estás seguro de eliminar este producto?');">Eliminar</a>
                     </div>
                 </div>

@@ -1,6 +1,10 @@
 var express = require('express');
 var router = express.Router();
+const multer = require('multer');
 const productController = require('../controllers/productController');
+
+// Configuración de multer para esta ruta específica
+const upload = multer({ storage: storage });
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -17,7 +21,8 @@ router.get('/create', productController.createForm);
 router.post('/', productController.create);
 
 // Editar producto
-router.get('/:id/edit', productController.editForm);
+router.get('/:id/editProduct', productController.editForm);
+router.put('/:id', upload.single('image'), productController.update);
 
 router.put('/:id', productController.update);
 

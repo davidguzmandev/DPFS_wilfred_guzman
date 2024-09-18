@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('partials/head')  %>
+<body>
+    <div class="containerCreateProduct">
+        <div class="logo">
+            <img src="/images/logo.webp" alt="DavidLogo">
+        </div>
+        <h1>Detalle del Producto</h1>
+        <a href="/listProducts" class="editar">Volver a la lista</a>
+
+        
+        <form action="/listProducts/<%= product.id %>?_method=PUT" method="POST">
+            <br>
+            <small>Los campos que no sean diligenciados quedarán igual</small>
+            <div>
+                <label for="name_product">Nombre del producto:</label>
+                <input type="text" id="name_product" name="name_product" value="<%= product.name_product %>" required>
+            </div>
+    
+            <div>
+                <label for="price">Precio:</label>
+                <input type="text" id="price" name="price" value="<%= product.price %>" step="0.01">
+            </div>
+    
+            <div>
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" value="<%= product.color.join(', ') %>" >
+                <!-- Aquí podrías usar un input más avanzado como un select multiple de preferencia -->
+            </div>
+    
+            <div>
+                <label for="image">Imagen actual:</label>
+                <img src="<%= product.image %>" height="100px" alt="<%= product.name_product %>">
+                <input type="file" id="image" name="image">
+                
+            </div>
+    
+            <div>
+                <label for="description">Descripción:</label>
+                <textarea id="description" name="description" rows="4" cols="50"><%= product.description %></textarea>
+            </div>
+    
+            <button type="submit" class="comprar">Guardar cambios</button>
+        </form>
+        <br>
+            <a href="/listProducts" class="editar">Cancelar</a>
+            <a href="/listProducts/<%= product.id %>/editProduct" class="editar">Editar</a>
+            <a href="/listProducts/<%= product.id %>?_method=DELETE" class="eliminar" onclick="return confirm('¿Estás seguro de eliminar este producto?');">Eliminar</a>
+    </div>
+
+</body>
+</html>
