@@ -10,7 +10,7 @@
         <a href="/listProducts" class="editar">Volver a la lista</a>
 
         
-        <form action="/listProducts/<%= product.id %>?_method=PUT" method="POST">
+        <form action="/listProducts/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <br>
             <small>Los campos que no sean diligenciados quedarán igual</small>
             <div>

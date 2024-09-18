@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const methodOverride = require('method-override');
 const multer = require('multer');
+const upload = require('./src/config/multerConfig');
+
 
 const indexRouter = require('./src/routes/index');
 const productsRouter = require('./src/routes/products');
@@ -12,7 +14,6 @@ const registerRouter = require('./src/routes/register');
 const listProductsRouter = require('./src/routes/listProducts');
 
 
-
 const app = express();
 
 // Configura la carpeta 'public' para archivos estáticos
@@ -21,22 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Configuración de method-override
 app.use(methodOverride('_method'));
 
-// Middleware para parsear datos del formulario
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Configuración de multer
-const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, path.join(__dirname, 'public/images')); // Directorio donde se almacenarán las imágenes
-    },
-    filename: function(req, file, cb) {
-        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-        cb(null, file.fieldname + '-' + uniqueSuffix + path.extname(file.originalname)); // Nombre del archivo
-    }
-});
-
-const upload = multer({ storage: storage });
+// Usar el middleware en tus rutas
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 // view engine setup
 // Configura EJS como el motor de vistas

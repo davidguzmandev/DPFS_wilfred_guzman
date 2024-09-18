@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
-const multer = require('multer');
+var multer = require('multer');
+const upload = require('../config/multerConfig');
 const productController = require('../controllers/productController');
 
 // Configuración de multer para esta ruta específica
-const upload = multer({ storage: storage });
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

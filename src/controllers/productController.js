@@ -72,10 +72,10 @@ const productController = {
             if (productIndex === -1) {
                 return res.status(404).send('Producto no encontrado');
             }
+            const existingProduct = products[productIndex];
 
             const newImage = req.file ? `/images/${req.file.filename}` : existingProduct.image;
 
-            const existingProduct = products[productIndex];
 
             const updatedProduct = {
                 ...products[productIndex],
