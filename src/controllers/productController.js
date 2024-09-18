@@ -27,7 +27,7 @@ const productController = {
 
     // Mostrar formulario de creación
     createForm: (req, res) => {
-        res.render('/createProduct');
+        res.render('createProduct');
     },
 
     // Crear un producto
@@ -100,10 +100,10 @@ const productController = {
 
     // Borrar un producto
     delete: (req, res) => {
-        const products = getProducts();
-        const filteredProducts = products.filter(p => p.id != req.params.id);
-        saveProducts(filteredProducts);
-        res.redirect('/listProducts');
+        const products = getProducts(); // Obtén la lista de productos
+        const filteredProducts = products.filter(p => p.id != req.params.id); // Filtra el producto a eliminar
+        saveProducts(filteredProducts); // Guarda la lista actualizada
+        res.redirect('/listProducts'); // Redirige a la página de listado de productos
     }
 };
 module.exports = productController;

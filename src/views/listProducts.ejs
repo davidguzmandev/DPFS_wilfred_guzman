@@ -7,7 +7,8 @@
             <img src="/images/logo.webp" alt="DavidLogo">
         </div>
         <h1>Listado de Productos</h1>
-        <h3>4 Productos encontrados</h3>
+        <h3><%= products.length %> Productos encontrados</h3>
+        <p><a href="/listProducts/createProduct" class="editar">Crear Nuevo</a></p>
         <div class="listProduct">
             <% products.forEach(product => { %>
                 <div class="containerProduct">
@@ -21,7 +22,9 @@
                         <p>Color: <%= product.color.join(', ') %></p>
                         <a href="/listProducts/<%= product.id %>" class="editar">Detalle</a>
                         <a href="/listProducts/<%= product.id %>/editProduct" class="editar">Editar</a>
-                        <a href="/listProducts/<%= product.id %>?_method=DELETE" class="eliminar" onclick="return confirm('¿Estás seguro de eliminar este producto?');">Eliminar</a>
+                        <form action="/listProducts/<%= product.id %>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estás seguro de eliminar este producto?');">
+                            <button type="submit" class="eliminar">Eliminar</button>
+                        </form>
                     </div>
                 </div>
             <% }) %>
