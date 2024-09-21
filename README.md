@@ -70,12 +70,13 @@ Aplicación Node.js + Express.js + EJS con:
 ### Sprint 4
 Implementación de datos mediante JSON. Creación de CRUD de productos.  
 -Archivos products.json y users.json con datos de productos y usuarios.  
+Acceso al CRUD /listProducts  
 Administración completa de productos con:  
 -Listado  
 -Detalle  
 -Creación  
 -Edición  
- Eliminación  
+-Eliminación  
 
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
