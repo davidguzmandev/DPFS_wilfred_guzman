@@ -8,6 +8,7 @@
     - [Wireframes](#sobre-el-desarrollo)
 - [Sprint 2](#sprint-2)
 - [Sprint 3](#sprint-3)
+- [Sprint 4](#sprint-4)
 - [Desarrolladores](#desarrolladores)
 
 
@@ -66,7 +67,7 @@ Aplicación Node.js + Express.js + EJS con:
 -Formulario de registro y login  
 -Formulario de carga y edición de productos  
 
-### Sprint 3
+### Sprint 4
 Implementación de datos mediante JSON. Creación de CRUD de productos.  
 -Archivos products.json y users.json con datos de productos y usuarios.  
 Administración completa de productos con:  
