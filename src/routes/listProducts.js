@@ -18,11 +18,9 @@ router.get('/:id', function(req, res, next) {
   productController.detail(req, res);
 });
 
-
 // Editar producto
 router.get('/:id/editProduct', productController.editForm);
 router.put('/:id', upload.single('image'), productController.update);
-
 
 // Eliminar producto
 router.delete('/:id', productController.delete);
