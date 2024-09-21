@@ -66,6 +66,16 @@ Aplicación Node.js + Express.js + EJS con:
 -Formulario de registro y login  
 -Formulario de carga y edición de productos  
 
+### Sprint 3
+Implementación de datos mediante JSON. Creación de CRUD de productos.  
+-Archivos products.json y users.json con datos de productos y usuarios.  
+Administración completa de productos con:  
+-Listado  
+-Detalle  
+-Creación  
+-Edición  
+ Eliminación  
+
 ### Desarrolladores:
 - David Guzman - Desarrollador Principal
 
