@@ -1,19 +1,46 @@
+const fs = require('fs');
 const path = require('path');
+const usersFilePath = path.join(__dirname, '../../data/users.json');
 
-// Datos ficticios para demostrar
-const users = {
-    '1': { id: 1, name: 'John Doe', email: 'john.doe@example.com' },
-    '2': { id: 2, name: 'Jane Smith', email: 'jane.smith@example.com' }
-};
-
-exports.getUserProfile = (req, res) => {
-    const userId = req.params.id;
-    const user = users[userId];
-
-    if (!user) {
-        return res.status(404).send('User not found');
+// Helper function to read JSON file
+const getUsers = () => {
+    try {
+        const data = fs.readFileSync(usersFilePath, 'utf-8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.error('Error al leer el archivo de usuarios:', error);
+        return [];
     }
-
-    // Enviar el archivo HTML y permitir que JavaScript en el cliente procese los datos
-    res.sendFile(path.join(__dirname, '../views/profile.html'));
 };
+
+const userController = {
+    // Mostrar el formulario de login
+    loginForm: (req, res) => {
+        res.render('login');
+    },
+
+    // Autenticar usuario
+    login: (req, res) => {
+        const { email, password } = req.body;
+        const users = getUsers();
+        const user = users.find(u => u.email === email && u.password === password);
+
+        if (user) {
+            // Autenticación exitosa
+            req.session.user = { id: user.id, email: user.email };
+            res.redirect('/listProducts');
+            console.log('sesion iniciada');
+        } else {
+            // Autenticación fallida
+            res.render('login', { error: 'Correo electrónico o contraseña incorrectos' });
+        }
+    },
+
+    // Cerrar sesión
+    logout: (req, res) => {
+        req.session.destroy();
+        res.redirect('/login');
+    }
+};
+
+module.exports = userController;

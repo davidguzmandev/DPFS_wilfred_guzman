@@ -3,6 +3,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 const multer = require('multer');
 const upload = require('./src/config/multerConfig');
+const session = require('express-session');
 
 
 const indexRouter = require('./src/routes/index');
@@ -52,5 +53,17 @@ app.use('/listProducts', listProductsRouter);
 app.listen(3000, () => {
     console.log('Servidor en el puerto 3000');
 });
+
+//User
+// Configurar express-session
+app.use(session({
+    secret: 'tu_secreto_aqui',
+    resave: false,
+    saveUninitialized: true
+}));
+
+// Importar rutas de usuario
+const userRoutes = require('./src/routes/user');
+app.use(userRoutes);
 
 module.exports = app;

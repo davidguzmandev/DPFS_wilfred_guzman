@@ -51,13 +51,16 @@
         <div>
             <h1>Iniciar Sesion</h1>
         </div>
-        <div>
-            <input type="email" name="email" placeholder="Correo electrónico*">
-            <input type="password" name="contrasena" placeholder="Contraseña*">
-        </div>
-        <br>
-        <a href="/listProducts/" class="cuentaButton">INICIAR SESION</a>
+        <form action="/login" method="POST">
+            <div>
+                <input type="email" name="email" placeholder="Correo electrónico*">
+                <input type="password" name="password" placeholder="Contraseña*">
+            </div>
+            <br>
+            <button type="submit" class="cuentaButton">INICIAR SESIÓN</button>
+        </form>
         <p>¿No tienes una cuenta? <a href="/register"><strong>Crear cuenta</strong></a></p>
     </div>
+
 </body>
 </html>
