@@ -10,7 +10,7 @@ const indexRouter = require('./src/routes/index');
 const productsRouter = require('./src/routes/products');
 const productDetailRouter = require('./src/routes/productDetail');
 const cartRouter = require('./src/routes/cart');
-const loginRouter = require('./src/routes/login');
+const loginRouter = require('./src/routes/user');
 const registerRouter = require('./src/routes/register');
 const listProductsRouter = require('./src/routes/listProducts');
 
@@ -19,6 +19,15 @@ const app = express();
 
 // Configura la carpeta 'public' para archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
+
+//User
+// Configurar express-session
+app.use(session({
+    secret: 'tu_secreto_aqui',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false } // Cambiar a true si estás usando HTTPS
+}));
 
 // Configuración de method-override
 app.use(methodOverride('_method'));
@@ -54,13 +63,6 @@ app.listen(3000, () => {
     console.log('Servidor en el puerto 3000');
 });
 
-//User
-// Configurar express-session
-app.use(session({
-    secret: 'tu_secreto_aqui',
-    resave: false,
-    saveUninitialized: true
-}));
 
 // Importar rutas de usuario
 const userRoutes = require('./src/routes/user');

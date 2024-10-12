@@ -50,6 +50,11 @@
         <p><a href="/">X</a></p>
         <div>
             <h1>Iniciar Sesion</h1>
+            <% if (error) { %>
+                <div class="error">
+                    <%= error %>
+                </div>
+            <% } %>
         </div>
         <form action="/login" method="POST">
             <div>

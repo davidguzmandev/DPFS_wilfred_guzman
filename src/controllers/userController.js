@@ -16,7 +16,7 @@ const getUsers = () => {
 const userController = {
     // Mostrar el formulario de login
     loginForm: (req, res) => {
-        res.render('login');
+        res.render('login', {error: null});
     },
 
     // Autenticar usuario
