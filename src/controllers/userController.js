@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const bcrypt = require('bcrypt'); // Para encriptar la contraseña
 const usersFilePath = path.join(__dirname, '../../data/users.json');
 
 // Helper function to read JSON file
@@ -13,7 +14,47 @@ const getUsers = () => {
     }
 };
 
+const saveUsers = (users) => {
+    fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
+};
+
 const userController = {
+
+    registerForm: (req, res) => {
+        res.render('register'); // Renderiza el formulario de registro (register.ejs)
+    },
+
+    register: (req, res) => {
+        const { username, email, password } = req.body;
+        const users = getUsers();
+
+        // Verificar si el email ya está registrado
+        const existingUser = users.find(user => user.email === email);
+        if (existingUser) {
+            return res.render('register', { error: 'El email ya está registrado' });
+        }
+
+        // Encriptar la contraseña
+        const hashedPassword = bcrypt.hashSync(password, 10);
+
+        // Crear el nuevo usuario
+        const newUser = {
+            id: users.length + 1,
+            username,
+            email,
+            password: hashedPassword
+        };
+
+        // Agregar el nuevo usuario a la lista
+        users.push(newUser);
+
+        // Guardar la lista actualizada en el archivo JSON
+        saveUsers(users);
+
+        // Redirigir al login o a otra página de tu elección
+        res.redirect('/login');
+    },
+
     // Mostrar el formulario de login
     loginForm: (req, res) => {
         res.render('login', {error: null});
