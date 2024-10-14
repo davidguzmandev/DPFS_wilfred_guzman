@@ -3,6 +3,7 @@ const path = require('path');
 const bcrypt = require('bcrypt'); // Para encriptar la contraseña
 const usersFilePath = path.join(__dirname, '../../data/users.json');
 
+
 // Helper function to read JSON file
 const getUsers = () => {
     try {
@@ -25,7 +26,7 @@ const userController = {
     },
 
     register: (req, res) => {
-        const { firstName, lastName, email, password } = req.body;
+        const { firstName, lastName, email, password, image } = req.body;
         const users = getUsers();
 
         // Verificar si el email ya está registrado
@@ -39,11 +40,12 @@ const userController = {
 
         // Crear el nuevo usuario
         const newUser = {
-            id: users.length + 1,
+            id: users.length ? users[users.length - 1].id + 1 : 1,
             firstName,
             lastName,
             email,
-            password: hashedPassword
+            password: hashedPassword,
+            image
         };
 
         // Agregar el nuevo usuario a la lista

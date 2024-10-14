@@ -6,7 +6,8 @@
     "email": "david@david.com",
     "password": "david",
     "type": "Staff",
-    "avatar": "/images/avatars/pretzel.jpg"
+    "avatar": "/images/avatars/pretzel.jpg",
+    "image": "/images/white_hoodie.webp"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "email": "xwinkell1@sciencedirect.com",
     "password": "oH8)F@BIwp1x",
     "type": "Customer",
-    "avatar": "/images/avatars/kipa.jpg"
+    "avatar": "/images/avatars/kipa.jpg",
+    "image": "/images/white_hoodie.webp"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "email": "hcolegate2@forbes.com",
     "password": "gS8,yV%A}{Es",
     "type": "Customer",
-    "avatar": "/images/avatars/pletzale.jpg"
+    "avatar": "/images/avatars/pletzale.jpg",
+    "image": "/images/white_hoodie.webp"
   },
   {
     "id": 4,
@@ -33,20 +36,23 @@
     "email": "bgreenin3@discovery.com",
     "password": "wF4>*`gFXep",
     "type": "Staff",
-    "avatar": "/images/avatars/polloCorazon.jpg"
+    "avatar": "/images/avatars/polloCorazon.jpg",
+    "image": "/images/white_hoodie.webp"
   },
   {
     "id": 5,
     "firstName": "David",
     "lastName": "Guzman",
     "email": "daguz.91@gmail.com",
-    "password": "$2b$10$ZxP08h4Y88oc3H/3bEYdZuHhiXkLkOf1ZLhTJEEPcvwstdygkttn2"
+    "password": "$2b$10$ZxP08h4Y88oc3H/3bEYdZuHhiXkLkOf1ZLhTJEEPcvwstdygkttn2",
+    "image": "/images/white_hoodie.webp"
   },
   {
     "id": 6,
     "firstName": "Carlos",
     "lastName": "Rodriguez",
     "email": "carlos@gmail.com",
-    "password": "$2b$10$MHZ1WwQvTLBnhKhigUTLnO9hA4aObxrDmAOSXGdLeuwvCDEjtFCp6"
+    "password": "$2b$10$MHZ1WwQvTLBnhKhigUTLnO9hA4aObxrDmAOSXGdLeuwvCDEjtFCp6",
+    "image": "/images/white_hoodie.webp"
   }
 ]

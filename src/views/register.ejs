@@ -6,7 +6,7 @@
     <%- include('partials/header')  %>
 
     <!-- Componente registo -->
-    <form action="/register" method="POST">
+    <form action="">
         <div class="crearcuenta">
             <div class="prom">
                 <p>Únase al programa de fidelización Preferred. Los miembro obtienen:</p>
@@ -21,6 +21,8 @@
                 <input type="text" id="lastName" name="lastName" placeholder="Apellido*" required>
                 <input type="email" id="email" name="email" placeholder="Correo electrónico*" required>
                 <input type="password" id="password" name="password" placeholder="Contraseña*" required>
+                <label for="">Imagen de Perfil</label>
+                <input type="file" id="imageFile" accept="image/*" multiple />
             </div>
         </div>
         <div class="end">
@@ -34,6 +36,5 @@
 
     <!-- Componente Footer -->
     <%- include('partials/footer')  %>
-
     </body>
 </html>

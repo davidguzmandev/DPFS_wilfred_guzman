@@ -45,7 +45,6 @@ const productController = {
         };
         products.push(newProduct);
         saveProducts(products);
-        console.log('Producto Creado');
         res.redirect('/products');
     },
 
@@ -68,7 +67,7 @@ const productController = {
         try {
             const products = getProducts();
             const productIndex = products.findIndex(p => p.id == req.params.id);
-    
+
             if (productIndex === -1) {
                 return res.status(404).send('Producto no encontrado');
             }
@@ -87,9 +86,9 @@ const productController = {
                 color: req.body.color ? req.body.color.split(',') : existingProduct.color, // Manejar caso en que req.body.color sea undefined
                 image: newImage  // Usa la nueva imagen si se ha subido una
             };
-    
+
             products[productIndex] = updatedProduct;
-    
+
             saveProducts(products);
             res.redirect('/listProducts');
         } catch (error) {
