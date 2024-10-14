@@ -25,7 +25,7 @@ const userController = {
     },
 
     register: (req, res) => {
-        const { username, email, password } = req.body;
+        const { firstName, lastName, email, password } = req.body;
         const users = getUsers();
 
         // Verificar si el email ya está registrado
@@ -40,7 +40,8 @@ const userController = {
         // Crear el nuevo usuario
         const newUser = {
             id: users.length + 1,
-            username,
+            firstName,
+            lastName,
             email,
             password: hashedPassword
         };
@@ -64,17 +65,24 @@ const userController = {
     login: (req, res) => {
         const { email, password } = req.body;
         const users = getUsers();
-        const user = users.find(u => u.email === email && u.password === password);
+        const user = users.find(user => user.email === email);
 
-        if (user) {
-            // Autenticación exitosa
-            req.session.user = { id: user.id, email: user.email };
-            res.redirect('/listProducts');
-            console.log('sesion iniciada');
-        } else {
+
+        if (!user) {
             // Autenticación fallida
             res.render('login', { error: 'Correo electrónico o contraseña incorrectos' });
         }
+
+        // Verificar la contraseña con bcrypt
+        const passwordMatch = bcrypt.compareSync(password, user.password);
+        if (!passwordMatch) {
+            // Autenticación fallida
+            return res.render('login', { error: 'Correo electrónico o contraseña incorrectos' });
+        }
+
+        // Autenticación exitosa
+        req.session.user = user;
+        res.redirect('/listProducts');
     },
 
     // Cerrar sesión

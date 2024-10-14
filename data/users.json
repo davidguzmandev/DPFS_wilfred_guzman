@@ -34,5 +34,19 @@
     "password": "wF4>*`gFXep",
     "type": "Staff",
     "avatar": "/images/avatars/polloCorazon.jpg"
+  },
+  {
+    "id": 5,
+    "firstName": "David",
+    "lastName": "Guzman",
+    "email": "daguz.91@gmail.com",
+    "password": "$2b$10$ZxP08h4Y88oc3H/3bEYdZuHhiXkLkOf1ZLhTJEEPcvwstdygkttn2"
+  },
+  {
+    "id": 6,
+    "firstName": "Carlos",
+    "lastName": "Rodriguez",
+    "email": "carlos@gmail.com",
+    "password": "$2b$10$MHZ1WwQvTLBnhKhigUTLnO9hA4aObxrDmAOSXGdLeuwvCDEjtFCp6"
   }
 ]

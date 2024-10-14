@@ -6,33 +6,34 @@
     <%- include('partials/header')  %>
 
     <!-- Componente registo -->
-    
-    <div class="crearcuenta">
-        <div class="prom">
-            <p>Únase al programa de fidelización Preferred. Los miembro obtienen:</p>
-            <p>- 1$ gastado = 1 punto</p>
-            <p>- 200 puntos = $20 de recompensa</p>
-            <p>- Pago rápido y sencillo</p>
-            <p>- Regalo especial de cumpleaños</p>
+    <form action="/register" method="POST">
+        <div class="crearcuenta">
+            <div class="prom">
+                <p>Únase al programa de fidelización Preferred. Los miembro obtienen:</p>
+                <p>- 1$ gastado = 1 punto</p>
+                <p>- 200 puntos = $20 de recompensa</p>
+                <p>- Pago rápido y sencillo</p>
+                <p>- Regalo especial de cumpleaños</p>
+            </div>
+            <div class="cuenta">
+                <h1>Crear Cuenta</h1>
+                <input type="text" id="firstName" name="firstName" placeholder="Nombre*" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Apellido*" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico*" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña*" required>
+            </div>
         </div>
-        <div class="cuenta">
-            <h1>Crear Cuenta</h1>
-            <input type="text" name="nombre" placeholder="Nombre*">
-            <input type="text" name="apellido" placeholder="Apellido*">
-            <input type="email" name="email" placeholder="Correo electrónico*">
-            <input type="password" name="contrasena" placeholder="Contraseña*">
+        <div class="end">
+            <div class="conditions">
+                <input type="checkbox" name="conditions">
+                <p>Acepto los Términos y condiciones y recibir actualizaciones sobre los últimos productos y promociones por correo electrónico u otros canales. Consulte la Política de privacidad , que incluye nuestro Aviso de incentivo financiero , para obtener más información.</p>
+            </div>
+            <button class="cuentaButton" type="submit">CREAR CUENTA</button>
         </div>
-    </div>
-    <div class="end">
-        <div class="conditions">
-            <input type="checkbox" name="conditions">
-            <p>Acepto los Términos y condiciones y recibir actualizaciones sobre los últimos productos y promociones por correo electrónico u otros canales. Consulte la Política de privacidad , que incluye nuestro Aviso de incentivo financiero , para obtener más información.</p>
-        </div>
-        <button class="cuentaButton">CREAR CUENTA</button>
-    </div>
-    
+    </form>
+
     <!-- Componente Footer -->
     <%- include('partials/footer')  %>
-    
+
     </body>
 </html>

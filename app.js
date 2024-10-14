@@ -14,8 +14,10 @@ const loginRouter = require('./src/routes/user');
 const registerRouter = require('./src/routes/register');
 const listProductsRouter = require('./src/routes/listProducts');
 
-
 const app = express();
+
+// Middleware para analizar datos de formularios
+app.use(express.urlencoded({ extended: true }));
 
 // Configura la carpeta 'public' para archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
