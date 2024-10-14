@@ -56,6 +56,15 @@ const userController = {
         res.redirect('/login');
     },
 
+    //Profile
+    profile: (req, res) => {
+        const user = req.session.user;
+        if (!user) {
+            return res.redirect('/login'); // Redirige al login si no hay un usuario en sesión
+        }
+        res.render('profile', { user });
+    },
+
     // Mostrar el formulario de login
     loginForm: (req, res) => {
         res.render('login', {error: null});
@@ -66,7 +75,6 @@ const userController = {
         const { email, password } = req.body;
         const users = getUsers();
         const user = users.find(user => user.email === email);
-
 
         if (!user) {
             // Autenticación fallida
@@ -82,13 +90,13 @@ const userController = {
 
         // Autenticación exitosa
         req.session.user = user;
-        res.redirect('/listProducts');
+        res.redirect('/profile');
     },
 
     // Cerrar sesión
     logout: (req, res) => {
         req.session.destroy();
-        res.redirect('/login');
+        res.redirect('/');
     }
 };
 

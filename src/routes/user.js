@@ -5,7 +5,7 @@ const authMiddleware = require('../middlewares/auth');
 
 //Profile
 router.get('/profile', authMiddleware.isAuthenticated, function(req, res, next) {
-    res.render('profile', { title: 'Perfil de Usuario'});
+    userController.profile(req, res);
 });
 
 // Mostrar formulario de login
