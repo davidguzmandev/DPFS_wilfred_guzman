@@ -31,7 +31,7 @@ app.use(session({
     cookie: { secure: false } // Cambiar a true si estás usando HTTPS
 }));
 
-// Configuración de method-override
+// Configuración de method-override (PUT)
 app.use(methodOverride('_method'));
 
 app.use(express.urlencoded({ extended: true }));
