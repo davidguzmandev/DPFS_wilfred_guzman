@@ -39,13 +39,14 @@ const productController = {
             price: req.body.price,
             description: req.body.description,
             category_product: req.body.category_product,
-            size: req.body.size.split(','),
-            color: req.body.color.split(','),
+            size: req.body.size,
+            color: req.body.color,
             image: req.body.image
         };
+        console.log(newProduct);
         products.push(newProduct);
         saveProducts(products);
-        res.redirect('/products');
+        res.redirect('/listProducts');
     },
 
     // Mostrar detalle de un producto

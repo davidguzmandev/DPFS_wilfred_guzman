@@ -20,7 +20,7 @@
                         <p>Código: <%= product.id %></p>
                         <p>Nombre: <strong><%= product.name_product %></strong></p>
                         <p>Precio: <%= product.price %></p>
-                        <p>Color: <%= product.color.join(', ') %></p>
+                        <p>Color: <%= Array.isArray(product.color) ? product.color.join(', ') : 'No especificado' %></p>
                         <a href="/listProducts/<%= product.id %>" class="editar">Detalle</a>
                         <a href="/listProducts/<%= product.id %>/editProduct" class="editar">Editar</a>
                         <form action="/listProducts/<%= product.id %>?_method=DELETE" method="POST" onsubmit="return confirm('¿Estás seguro de eliminar este producto?');">
