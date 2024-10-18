@@ -6,7 +6,7 @@
     <%- include('partials/header')  %>
 
     <!-- Componente registo -->
-    <form action="">
+    <form action="/register" method="POST" enctype="multipart/form-data">
         <div class="crearcuenta">
             <div class="prom">
                 <p>Únase al programa de fidelización Preferred. Los miembro obtienen:</p>
@@ -22,7 +22,7 @@
                 <input type="email" id="email" name="email" placeholder="Correo electrónico*" required>
                 <input type="password" id="password" name="password" placeholder="Contraseña*" required>
                 <label for="">Imagen de Perfil</label>
-                <input type="file" id="imageFile" accept="image/*" multiple />
+                <input type="file" id="imageFile" accept="image/*" name="image" multiple />
             </div>
         </div>
         <div class="end">

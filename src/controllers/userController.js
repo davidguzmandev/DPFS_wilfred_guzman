@@ -26,6 +26,7 @@ const userController = {
     },
 
     register: (req, res) => {
+        console.log('Registrar');
         const { firstName, lastName, email, password, image } = req.body;
         const users = getUsers();
 
@@ -45,10 +46,11 @@ const userController = {
             lastName,
             email,
             password: hashedPassword,
-            image
+            image: req.file ? `/images/${req.file.filename}` : undefined
         };
 
         // Agregar el nuevo usuario a la lista
+        console.log(newUser);
         users.push(newUser);
 
         // Guardar la lista actualizada en el archivo JSON
