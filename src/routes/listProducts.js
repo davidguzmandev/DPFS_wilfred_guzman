@@ -12,7 +12,7 @@ router.get('/', authMiddleware.isAuthenticated, function(req, res, next) {
 
 // Crear producto
 router.get('/createProduct', authMiddleware.isAuthenticated, productController.createForm);
-router.post('/', productController.create);
+router.post('/', upload.single('image'), productController.create);
 
 // Detalle de producto
 router.get('/:id', authMiddleware.isAuthenticated, function(req, res, next) {

@@ -8,8 +8,9 @@
         </div>
         <h1>Crear Producto</h1>
         <div class="containerProduct">
-            
+
             <form action="/listProducts" method="POST" enctype="multipart/form-data">
+
                 <label for="name_product">Nombre</label>
                 <input type="text" id="name_product" name="name_product">
 
@@ -22,22 +23,22 @@
                 <label for="">Categoria:</label><br>
                 <div class="categoria">
                     <label for="hoodie">Hoodie</label><br>
-                    <input type="radio" id="hoodie" name="categoria" value="hoodie">
+                    <input type="radio" id="hoodie" name="category_product" value="hoodie">
                     <label for="jogger">Jogger</label><br>  
-                    <input type="radio" id="jogger" name="categoria" value="jogger">
+                    <input type="radio" id="jogger" name="category_product" value="jogger">
                     <label for="accesorios">Accesorios</label>
-                    <input type="radio" id="accesorios" name="categoria" value="accesorios">
+                    <input type="radio" id="accesorios" name="category_product" value="accesorios">
                 </div>
-            
-                <label for="colors">Color</label>
-                <select name="colors" id="colors">
+
+                <label for="color">Color</label>
+                <select name="color" id="color">
                     <option value="negro">Negro</option>
                     <option value="blanco">Blanco</option>
                     <option value="azul">Azul</option>
                     <option value="Rojo">Rojo</option>
                 </select>
 
-                <label for="">Talla</label>
+                <label for="size">Talla</label>
                 <select name="size" id="size">
                     <option value="negro">S</option>
                     <option value="blanco">M</option>
@@ -46,7 +47,7 @@
                 </select>
 
                 <label for="">Imagen</label>
-                <input type="file" id="imageFile" accept="image/*" multiple />
+                <input type="file" id="imageFile" accept="image/*" name="image" multiple />
                 <br>
                 <button type="submit">Cargar</button>
                 <p><a href="/listProducts" class="editar">Cancelar</a></p>

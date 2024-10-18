@@ -10,7 +10,7 @@ const indexRouter = require('./src/routes/index');
 const productsRouter = require('./src/routes/products');
 const productDetailRouter = require('./src/routes/productDetail');
 const cartRouter = require('./src/routes/cart');
-const loginRouter = require('./src/routes/user');
+const userRoutes = require('./src/routes/user');
 const registerRouter = require('./src/routes/register');
 const listProductsRouter = require('./src/routes/listProducts');
 
@@ -18,9 +18,15 @@ const app = express();
 
 // Middleware para analizar datos de formularios
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Configuración de method-override (PUT)
+app.use(methodOverride('_method'));
 
 // Configura la carpeta 'public' para archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
+// Usar el middleware en tus rutas
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 //User
 // Configurar express-session
@@ -30,15 +36,6 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false } // Cambiar a true si estás usando HTTPS
 }));
-
-// Configuración de method-override (PUT)
-app.use(methodOverride('_method'));
-
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-// Usar el middleware en tus rutas
-app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 // view engine setup
 // Configura EJS como el motor de vistas
@@ -53,8 +50,8 @@ app.use('/', indexRouter);
 app.use('/products', productsRouter);
 app.use('/productDetail', productDetailRouter);
 app.use('/productCart', cartRouter);
-app.use('/login', loginRouter);
 app.use('/register', registerRouter);
+app.use(userRoutes);
 
 // Rutas Backend
 app.use('/listProducts', listProductsRouter);
@@ -64,10 +61,5 @@ app.use('/listProducts', listProductsRouter);
 app.listen(3000, () => {
     console.log('Servidor en el puerto 3000');
 });
-
-
-// Importar rutas de usuario
-const userRoutes = require('./src/routes/user');
-app.use(userRoutes);
 
 module.exports = app;

@@ -41,9 +41,9 @@ const productController = {
             category_product: req.body.category_product,
             size: req.body.size,
             color: req.body.color,
-            image: req.body.image
+            image: req.file ? `/images/${req.file.filename}` : undefined
         };
-        console.log(newProduct);
+
         products.push(newProduct);
         saveProducts(products);
         res.redirect('/listProducts');
